@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --pink: hsl(322, 100%, 66%);
+    --pale-cyan: hsl(193, 100%, 96%);
+    --dark-cyan:  hsl(192, 100%, 9%);
+    --grayish-blue: hsl(208, 11%, 55%);
+    --poppins: 'Poppins', sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+}
+body{
+    background: url(assets/bg-hero-desktop.svg); 
+    background-position: cover;
+    font-size: 18px;
+    font-family: var(--poppins);
+}
+header{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 100px 160px;
+    grid-template-rows: 30px;
+    margin: 8% 0;
+
+}
+#try-it{
+    border: none;
+    background-color: white;
+    color: var(--dark-cyan);
+    font-family: var(--poppins);
+    border-radius: 25px;
+    padding: 3px 40px;
+    box-shadow: 0 3px var(--grayish-blue);
+    font-weight: 900;
+    text-decoration: none;
+}
+.action{
+    border: none;
+    background-color: var(--pink);
+    color: white;
+    border-radius: 25px;
+    padding: 10px 40px;
+    width: 300px;
+}
+
+.pic{
+    max-width: 320px;
+    height: auto;
+}
+.cards{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 100px;
+
+}
+.card{
+    background-color: white;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px 5px rgba(126, 125, 125, 0.178);
+}
+.grid-info{
+    display: grid;
+    grid-template-columns: 40px 280px;
+    grid-template-rows: 1fr auto auto;
+    grid-gap: 10px;
+}
+li{
+    list-style: none;
+}
+ul{
+    line-height: 40px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    font-size: 14px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 320px;
+    justify-content: center;
+}
+
+footer{
+    color: white;
+    background-color: var(--dark-cyan);
+    font-family: var(--open-sans);
+    padding: 120px 0 20px 30px;
+    font-size: 14px;
+}
+.grid-wrapper{
+    max-width: 360px;
+}
+.card, .grow, .user{
+    min-width: 320px;
+    height: auto;
+}
+.info{
+    max-width: 350px;
+}
+p, h1{
+    text-align: center;
+}
+.hero{
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 100px 160px auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    font-family: var(--poppins);
+    max-width: 360px;
+}
+.logo{
+    max-width: 100px;
+    height: auto;
+}
+.ready{
+    display: grid;
+    grid-template-rows: 80px 40px;
+    place-content: center;
+
+    background-color: white;
+    padding: 50px 16px;
+    box-shadow: 0 0 10px 0 rgba(126, 125, 125, 0.178);
+    border-radius: 12px;
+    transform: translate(0, 40px);
+    cursor: pointer;
+}
+.icons{
+    display: grid;
+    grid-template-columns: 32px 32px 32px;
+    grid-gap: 20px;
+    place-content: center; 
+}
+
+@media screen and (max-width: 1440px) and (min-width: 400px){
+    .wrapper{
+        display:inline;
+        margin-top: 0;
+
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        margin: 3% 0;
+    }
+    h1{
+        font-size: 24px;
+    }
+    .hero{
+        width: 360px;
+    }
+    .logo{
+        min-width: 160px;
+    }
+    .hero-stuff{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    P{
+        text-align: left;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        padding: 300px 0 400px 0;
+        transform: translateY(320px);
+    }
+    .card{
+        width: 1200px;
+        display: flex;
+        padding-top: 20px;
+    }
+    .flow{
+        display: flex;
+        justify-content: space-around;
+    }
+    .grow, .user{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .ready{
+        max-width: 360px;
+        transform: translate(460px, 45%);
+    }
+    ul{
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 20px 20px 20px;
+
+    }
+    .grid-three{
+        display: grid;
+        grid-template-rows: 40px 40px;
+        gap: 80px;
+        align-items: flex-start;
+    }
+    .grid-wrapper{
+        display: grid;
+        grid-template-columns: 350px 200px 200px;
+        justify-content: space-around;
+    }
+    footer{
+        display: grid;
+        grid-template-rows: 1fr auto;
+        justify-content: center;
+        gap: 50px;
+        min-width: 600px;
+    }
+    
+}
